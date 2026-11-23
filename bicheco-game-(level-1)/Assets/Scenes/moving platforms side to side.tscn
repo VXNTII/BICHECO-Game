@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://pfa3a0c2gdqn"]
+
+[ext_resource type="Texture2D" uid="uid://cn7amcw2wfugn" path="res://Assets/Sprites/KASSYS LEVEL_/Untitled design (4).png" id="1_vqw6j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2srm"]
+size = Vector2(901.25, 144.5)
+
+[sub_resource type="Animation" id="Animation_vqw6j"]
+resource_name = "move"
+length = 5.0
+markers = [{
+"color": Color(1, 1, 1, 1),
+"name": &"move",
+"time": 2.4358
+}]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AnimatableBody2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ur8dq"]
+_data = {
+&"move": SubResource("Animation_vqw6j")
+}
+
+[node name="Node2D" type="Node2D" unique_id=2057457271]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=610138414]
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=268983813]
+texture = ExtResource("1_vqw6j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1038609285]
+position = Vector2(-31.375, -93)
+shape = SubResource("RectangleShape2D_e2srm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1137266426]
+root_node = NodePath("../AnimatableBody2D")
+libraries/ = SubResource("AnimationLibrary_ur8dq")

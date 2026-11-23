@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bvtwakx4qpqmt"
+path="res://.godot/imported/sci_fi_platformer04_main_loop.ogg-c8fb125f7551e5c18a8ec322e316105e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Sprites/KASSYS LEVEL_/gothicvania-cemetery-files/Assets/Phaser Demo/assets/sounds/sci_fi_platformer04_main_loop.ogg"
+dest_files=["res://.godot/imported/sci_fi_platformer04_main_loop.ogg-c8fb125f7551e5c18a8ec322e316105e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
